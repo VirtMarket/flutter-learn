@@ -6,9 +6,14 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
     return MaterialApp(
       title: 'Welcome to Flutter 1',
+      theme: ThemeData(
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.brown,
+          foregroundColor: Colors.black,
+        ),
+      ),
       home: RandomWords()
     );
   }
